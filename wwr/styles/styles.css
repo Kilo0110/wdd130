@@ -1,3 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Righteous&display=swap');
+
+body {
+  font-size: 22px;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  margin: 0;
+}
+
 #content {
   max-width: 1600px;
   margin: 0 auto;
@@ -25,6 +38,10 @@ main section {
   text-align: center;
 }
 
+main section img {
+  box-sizing: border-box;
+}
+
 #background {
   height: 725px;
 }
@@ -39,6 +56,7 @@ header {
 
 nav a {
   color: antiquewhite;
+  padding: 35px;
 }
 
 nav a:hover {
@@ -47,6 +65,9 @@ nav a:hover {
 
 .home-title {
   color: #690303;
+  font-family: 'Righteous', cursive;
+  font-size: 2em;
+  margin-top: 10px;
 }
 
 .book,
@@ -54,6 +75,10 @@ nav a:hover {
   background-color: #690303;
   color: #ffffff;
   text-decoration: none;
+  font-size: 18px;
+  padding: 15px 35px;
+  margin-top: 50px;
+  border-radius: 5px;
 }
 
 .book:hover,
@@ -66,21 +91,41 @@ nav a:hover {
   background-color: #3e78b2;
 }
 
+.card-img {
+  border: 10px solid #690303;
+}
+
+.rivers-card,
+.camping-card,
+.rapids-card {
+  margin: 200px 0;
+}
+
+footer {
+  margin-top: 200px;
+}
+
 .msg {
   background-color: #f18f01;
   color: #ffffff;
+  line-height: 1.5em;
+  padding: 35px;
 }
 
 .msg h2 {
   color: #ffffff;
+  font-family: 'Righteous', cursive;
 }
 
 .msg p {
   color: #ffffff;
+  font-size: .8em;
+  padding-bottom: 15px;
 }
 
 footer {
   background-color: #3e78b2;
+  padding: 25px 50px;
 }
 
 footer a {
@@ -96,6 +141,10 @@ footer p a:hover {
   text-decoration: underline;
 }
 
+footer .social img {
+  padding-top: 15px;
+}
+
 footer a:hover {
   color: #690303;
 }
@@ -103,4 +152,8 @@ footer a:hover {
 .logo,
 .icon {
   width: 80px;
+}
+
+.icon {
+  padding-top: 10px;
 }
