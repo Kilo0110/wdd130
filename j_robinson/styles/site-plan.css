@@ -15,15 +15,15 @@ Fonts are separated by a | */
   --paragraph-font: Lato, Helvetica, sans-serif;
 
   /* these colors below should be chosen from among your palette colors above */
-  --headline-color-on-white: #396e94; /* headlines on a white background */
+  --headline-color-on-white: #30368e; /* headlines on a white background */
   --headline-color-on-color: white; /* headlines on a colored background */
-  --paragraph-color-on-white: #396e94; /* paragraph text on a white background */
+  --paragraph-color-on-white: #441111; /* paragraph text on a white background */
   --paragraph-color-on-color: white; /* paragraph text on a colored background */
-  --paragraph-background-color: #396e94;
-  --nav-link-color: #396e94;
-  --nav-background-color: #d4ac0d;
+  --paragraph-background-color: #30368e;
+  --nav-link-color: white;
+  --nav-background-color: #61867f;
   --nav-hover-link-color: white;
-  --nav-hover-background-color: #396e94;
+  --nav-hover-background-color: #441111;
 }
 
 /*  Look around below...but DON'T CHANGE ANYTHING! */
@@ -91,6 +91,7 @@ p {
 }
 .secondary {
   background-color: var(--secondary-color);
+  color: var(--accent2-color);
 }
 .accent1 {
   background-color: var(--accent1-color);
@@ -105,6 +106,19 @@ p.colored {
   color: var(--paragraph-color-on-color);
 }
 
+ul.lists {
+  background-color: var(--accent1-color);
+  color: var(--headline-color-on-color);
+  padding: 1em 0.5em;
+}
+
+img.page-img {
+  width: 100%;
+  height: min-content;
+  max-height: 500px;
+  object-fit: cover;
+}
+
 nav {
   background-color: var(--nav-background-color);
   line-height: 3em;
@@ -114,6 +128,8 @@ nav {
 nav {
   list-style-type: none;
   display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 nav a {
   padding: 1em;
