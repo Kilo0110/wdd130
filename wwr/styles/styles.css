@@ -244,6 +244,8 @@ footer a:hover {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   min-height: 50vh;
+
+  background: url('../images/hero.png');
 }
 
 .contact-text-container {
@@ -297,7 +299,7 @@ footer a:hover {
 
 .main-contact-form__header p,
 .extra-contact-info p {
-  font-size: 1  rem;
+  font-size: 1 rem;
 }
 
 .full-name-input-container {
