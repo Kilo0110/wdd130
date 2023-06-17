@@ -237,6 +237,125 @@ footer a:hover {
   padding-top: 10px;
 }
 
+/* ============================ Styling for the Contact Us Page */
+
+.main-content {
+  padding: 0 2em;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  min-height: 50vh;
+}
+
+.contact-text-container {
+  grid-area: 1 / 1 / 4 / 7;
+}
+
+.input-field-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-field-container label {
+  text-transform: capitalize;
+}
+
+.input-field-container input,
+.input-field-container textarea {
+  padding: 0.5em 0.75em;
+  outline: none;
+  background: #f8faf5;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.input-field-container input:active,
+.input-field-container input:focus-visible,
+.input-field-container textarea:active,
+.input-field-container textarea:focus-visible {
+  border: 2px solid #3e78b2;
+  background: white;
+}
+
+.main-contact-form {
+  grid-area: 4 / 1 / 11 / 5;
+
+  background-color: #e2e8f3;
+  padding: 1.5em;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1em;
+}
+
+.main-contact-form__header {
+  grid-area: 1 / 1 / 4 / 7;
+}
+
+.main-contact-form__header h2,
+.extra-contact-info h2 {
+  color: #3e78b2;
+}
+
+.main-contact-form__header p,
+.extra-contact-info p {
+  font-size: 1  rem;
+}
+
+.full-name-input-container {
+  grid-area: 4 / 1 / 7 / 3;
+}
+
+.telephone-input-container {
+  grid-area: 7 / 1 / 10 / 3;
+}
+.email-input-container {
+  grid-area: 4 / 3 / 7 / 5;
+}
+.patrons-input-container {
+  grid-area: 7 / 3 / 10 / 5;
+}
+.info-input-container {
+  grid-area: 10 / 1 / 13 / 5;
+}
+
+.main-contact-form button {
+  grid-area: 14 / 4 / 15 / 5;
+
+  background-color: #3e78b2;
+  color: white;
+  outline: none;
+  border: none;
+  padding: 0.75em 0;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.main-contact-form button:hover {
+  background-color: #5091d1;
+}
+
+.div7 {
+  grid-area: 14 / 4 / 15 / 5;
+}
+
+.extra-contact-info {
+  grid-area: 4 / 5 / 11 / 7;
+
+  background-color: #e2e8f3;
+  padding: 1.5em;
+  border-left: 1px solid gray;
+}
+
+.contact-text-container h1 {
+  color: #3e78b2;
+}
+
+.contact-text-container p {
+  font-size: 0.75em;
+  max-width: 800px;
+}
+
+/* ======================================================= */
+
 @media screen and (max-width: 900px) {
   #hero,
   .home-grid {
