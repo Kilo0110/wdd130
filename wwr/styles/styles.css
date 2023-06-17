@@ -240,7 +240,7 @@ footer a:hover {
 /* ============================ Styling for the Contact Us Page */
 
 .main-content {
-  padding: 0 2em;
+  padding: 2em;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   min-height: 50vh;
@@ -250,6 +250,8 @@ footer a:hover {
 
 .contact-text-container {
   grid-area: 1 / 1 / 4 / 7;
+  background-color: #f2f6ff;
+  padding: 1.5em;
 }
 
 .input-field-container {
