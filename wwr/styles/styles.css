@@ -254,9 +254,14 @@ footer a:hover {
   padding: 1.5em;
 }
 
+label span {
+  color: red;
+}
+
 .input-field-container {
   display: flex;
   flex-direction: column;
+  gap: 0.25em;
 }
 
 .input-field-container label {
@@ -301,7 +306,7 @@ footer a:hover {
 
 .main-contact-form__header p,
 .extra-contact-info p {
-  font-size: 1 rem;
+  font-size: 1rem;
 }
 
 .full-name-input-container {
@@ -333,6 +338,14 @@ footer a:hover {
   cursor: pointer;
 }
 
+.alert-text {
+  grid-area: 15 / 1 / 16/ 5;
+  font-size: 0.75rem;
+  font-style: italic;
+  color: red;
+  display: none;
+}
+
 .main-contact-form button:hover {
   background-color: #5091d1;
 }
@@ -354,7 +367,7 @@ footer a:hover {
 }
 
 .contact-text-container p {
-  font-size: 0.75em;
+  font-size: 1.25rem;
   max-width: 800px;
 }
 
@@ -402,6 +415,38 @@ footer a:hover {
     display: block;
     margin: 0 auto;
   }
+
+  /* ============================ Styling for the Contact Us Page */
+
+  .main-content {
+    display: block;
+    padding: 1em;
+  }
+
+  .main-contact-form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-contact-form__header p,
+  .extra-contact-info p {
+    font-size: 0.75rem;
+  }
+
+  .contact-text-container p {
+    font-size: 1rem;
+  }
+
+  label {
+    font-size: 1rem;
+  }
+
+  .extra-contact-info {
+    border: none;
+  }
+
+  /* ========================================================== */
+
   footer {
     margin-top: 25px;
   }
