@@ -4,6 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>J Robinson - Artist || Home</title>
 </head>
 
@@ -34,113 +38,123 @@
   <main class="main">
     <section class="hero-section">
       <div class="hero-section__text-container">
-        <h1>Clear Value Statement for My Target Audience</h1>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus culpa nostrum temporibus fugiat, porro
+        <h1 class="hero-section__heading">Clear Value Statement for My Target Audience</h1>
+        <p class="hero-section__intro">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus culpa nostrum
+          temporibus fugiat, porro
           sit dolor enim beatae repudiandae in numquam quibusdam commodi rerum tempore, assumenda eligendi rem quasi
           vero.</p>
         <button class="contact-btn hero-section__contact-btn">Contact me</button>
       </div>
       <div class="hero-section__image-container">
-        <img src="./images/home_images/image.jpg" alt="">
+        <img src="./images/home_images/image.jpg" alt="" class="hero-section__image">
       </div>
     </section>
     <section class="about-section">
-      <h2>A little about me</h2>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit, distinctio.</p>
+      <h2 class="section__heading">A little about me</h2>
+      <p class="section__intro">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit, distinctio.</p>
       <div class="about-section__timeline-container">
         <ol class="timeline__controls">
-          <li class="timeline__control">Who am I?</li>
-          <li class="timeline__control">Why art?</li>
-          <li class="timeline__control">What inspires me?</li>
+          <button class="timeline__control active">Who am I?</button>
+          <button class="timeline__control">Why art?</button>
+          <button class="timeline__control">What inspires me?</button>
         </ol>
-        <div class="timeline__text-container">
-          <div class="timeline__text-entry">
-            <h3>Who am I?</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, eius ipsam et laboriosam delectus esse
+        <div class="timeline__entry-container">
+          <div class="timeline__entry">
+            <h3 class="timeline__entry__heading">Who am I?</h3>
+            <p class="timeline__entry__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, eius ipsam
+              et laboriosam delectus esse
               quasi. Saepe officia quas architecto!</p>
-            <img src="./images/home_images/image.jpg" alt="">
+            <img class="timeline__entry__img" src="./images/home_images/image.jpg" alt="">
           </div>
-          <div class="timeline__text-entry">
-            <h3>Why art?</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, eius ipsam et laboriosam delectus esse
+          <div class="timeline__entry">
+            <h3 class="timeline__entry__heading">Why art?</h3>
+            <p class="timeline__entry__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, eius ipsam
+              et laboriosam delectus esse
               quasi. Saepe officia quas architecto!</p>
-            <img src="./images/home_images/image.jpg" alt="">
+            <img class="timeline__entry__img" src="./images/home_images/image.jpg" alt="">
           </div>
-          <div class="timeline__text-entry">
-            <h3>What inspires me?</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, eius ipsam et laboriosam delectus esse
+          <div class="timeline__entry">
+            <h3 class="timeline__entry__heading">What inspires me?</h3>
+            <p class="timeline__entry__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, eius ipsam
+              et laboriosam delectus esse
               quasi. Saepe officia quas architecto!</p>
-            <img src="./images/home_images/image.jpg" alt="">
+            <img class="timeline__entry__img" src="./images/home_images/image.jpg" alt="">
           </div>
         </div>
       </div>
     </section>
     <section class="offering-section">
-      <h2>My offerings</h2>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam, consectetur.</p>
+      <h2 class="section__heading">My offerings</h2>
+      <p class="section__intro">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam, consectetur.</p>
       <div class="offering-container">
         <div class="offering">
           <i></i>
-          <h3>Offering 1</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, sit.</p>
+          <h3 class="offering__name">Offering 1</h3>
+          <p class="offering__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque consectetur quis
+            adipisci, ea eos voluptatum iure totam mollitia pariatur perspiciatis.</p>
         </div>
         <div class="offering">
           <i></i>
-          <h3>Offering 2</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, sit.</p>
+          <h3 class="offering__name">Offering 2</h3>
+          <p class="offering__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque consectetur quis
+            adipisci, ea eos voluptatum iure totam mollitia pariatur perspiciatis.</p>
         </div>
         <div class="offering">
           <i></i>
-          <h3>Offering 3</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, sit.</p>
+          <h3 class="offering__name">Offering 3</h3>
+          <p class="offering__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque consectetur quis
+            adipisci, ea eos voluptatum iure totam mollitia pariatur perspiciatis.</p>
         </div>
       </div>
     </section>
     <section class="testimonial-section">
-      <h2>What clients say about me</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, distinctio?</p>
+      <h2 class="section__heading">What clients say about me</h2>
+      <p class="section__intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, distinctio?</p>
       <div class="testimonial-container">
         <div class="testimonial">
           <img src="https://picsum.photos/200" alt="" class="client-img">
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque suscipit incidunt, recusandae tenetur quod
+          <p class="client-testimony">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque suscipit
+            incidunt, recusandae tenetur quod
             magnam possimus exercitationem impedit voluptatem consectetur.</p>
-          <h3 class="client-name"></h3>
-          <small class="client-job-title">Lorem ipsum dolor sit.</small>
+          <h3 class="client-name">Steve Rogers</h3>
+          <small class="client-job-title">Captain America</small>
         </div>
         <div class="testimonial">
           <img src="https://picsum.photos/200" alt="" class="client-img">
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque suscipit incidunt, recusandae tenetur quod
+          <p class="client-testimony">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque suscipit
+            incidunt, recusandae tenetur quod
             magnam possimus exercitationem impedit voluptatem consectetur.</p>
-          <h3 class="client-name"></h3>
-          <small class="client-job-title">Lorem ipsum dolor sit.</small>
+          <h3 class="client-name">Clint Barton</h3>
+          <small class="client-job-title">Hawkeye / Ronin</small>
         </div>
         <div class="testimonial">
           <img src="https://picsum.photos/200" alt="" class="client-img">
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque suscipit incidunt, recusandae tenetur quod
+          <p class="client-testimony">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque suscipit
+            incidunt, recusandae tenetur quod
             magnam possimus exercitationem impedit voluptatem consectetur.</p>
-          <h3 class="client-name"></h3>
-          <small class="client-job-title">Lorem ipsum dolor sit.</small>
+          <h3 class="client-name">Tony Stark</h3>
+          <small class="client-job-title">Ironman</small>
         </div>
       </div>
     </section>
 
     <section class="catalogue-section">
-      <h2>My works</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, distinctio?</p>
+      <h2 class="section__heading">My works</h2>
+      <p class="section__intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, distinctio?</p>
       <div class="catalogue-container">
-        <img src="https://picsum.photos/200" alt="" class="catalogue__art-entry">
-        <img src="https://picsum.photos/200" alt="" class="catalogue__art-entry">
-        <img src="https://picsum.photos/200" alt="" class="catalogue__art-entry">
-        <img src="https://picsum.photos/200" alt="" class="catalogue__art-entry">
-        <img src="https://picsum.photos/200" alt="" class="catalogue__art-entry">
-        <img src="https://picsum.photos/200" alt="" class="catalogue__art-entry">
-        <img src="https://picsum.photos/200" alt="" class="catalogue__art-entry">
-        <img src="https://picsum.photos/200" alt="" class="catalogue__art-entry">
+        <img src="https://picsum.photos/100" alt="" class="catalogue__art-entry">
+        <img src="https://picsum.photos/100" alt="" class="catalogue__art-entry">
+        <img src="https://picsum.photos/100" alt="" class="catalogue__art-entry">
+        <img src="https://picsum.photos/100" alt="" class="catalogue__art-entry">
+        <img src="https://picsum.photos/100" alt="" class="catalogue__art-entry">
+        <img src="https://picsum.photos/100" alt="" class="catalogue__art-entry">
+        <img src="https://picsum.photos/100" alt="" class="catalogue__art-entry">
+        <img src="https://picsum.photos/100" alt="" class="catalogue__art-entry">
       </div>
     </section>
     <section class="contact-section">
-      <h2>Get your own art today!</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, distinctio?</p>
+      <h2 class="section__heading">Get your own art today!</h2>
+      <p class="section__intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, distinctio?</p>
       <button class="contact-btn">Contact me</button>
 
     </section>
@@ -148,9 +162,15 @@
 
   <footer class="footer">
     <ul class="social-media-container">
-      <li></li>
-      <li></li>
-      <li></li>
+      <li>
+        <i class="fab fa-facebook"></i>
+      </li>
+      <li>
+        <i class="fab fa-instagram"></i>
+      </li>
+      <li>
+        <i class="fab fa-twitter"></i>
+      </li>
     </ul>
 
     <div class="copyright-container">
