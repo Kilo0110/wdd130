@@ -1,74 +1,4 @@
-@use './resets';
-
-@import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
-
-:root {
-  /* change the values below to your colors from your palette */
-  --primary-color: #61867f;
-  --secondary-color: #30368e;
-  --accent1-color: #441111;
-  --accent2-color: white;
-
-  /* change the values below to your chosen font(s) */
-  --heading-font: 'IM Fell French Canon SC';
-  --paragraph-font: Lato, Helvetica, sans-serif;
-
-  /* these colors below should be chosen from among your palette colors above */
-  --headline-color-on-white: #30368e;
-  /* headlines on a white background */
-  --headline-color-on-color: white;
-  /* headlines on a colored background */
-  --paragraph-color-on-white: #441111;
-  /* paragraph text on a white background */
-  --paragraph-color-on-color: white;
-  /* paragraph text on a colored background */
-  --paragraph-background-color: #30368e;
-  --nav-link-color: white;
-  --nav-background-color: #61867f;
-  --nav-hover-link-color: white;
-  --nav-hover-background-color: #441111;
-
-}
-
-body {
-  font-family: var(--paragraph-font);
-}
-
-.main-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1em 2em;
-  background-color: var(--nav-background-color);
-
-  &__logo {
-    width: 5rem;
-  }
-
-  &__items-container {
-    display: flex;
-    gap: 1em;
-    list-style: none;
-
-    a {
-      text-decoration: none;
-      color: var(--nav-link-color);
-    }
-  }
-
-  &__hamburger-btn {
-    display: flex;
-    flex-direction: column;
-    gap: .3em;
-    display: none;
-
-    .line {
-      width: 40px;
-      height: 4px;
-      background-color: red;
-    }
-  }
-}
+@use 'partials';
 
 .hero-section {
   display: flex;
@@ -96,8 +26,8 @@ body {
       text-align: left;
       padding: 2em;
       padding-right: 3em;
-      justify-content: space-between;
-      gap: 0;
+      justify-content: center;
+      gap: .5em;
 
       .hero-section__heading {
         max-width: 450px;
@@ -146,56 +76,13 @@ body {
 
     &__image {
       height: 100%;
+      max-height: 100%;
     }
   }
 }
 
-.contact-btn {
-  padding: .75em 2em;
-  border: none;
-  outline: none;
-  background-color: var(--headline-color-on-white);
-  color: var(--accent2-color);
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: .90rem;
-  vertical-align: baseline;
-  cursor: pointer;
-  transition: all .3s ease-in-out;
-  border-radius: .25em;
-
-  &:hover {
-    background-color: var(--accent1-color);
-  }
-
-  &:active {
-    scale: 80%;
-  }
-}
-
-section {
-  margin-bottom: 3em;
-}
-
-.section__heading,
-.section__intro {
-  text-align: center;
-}
-
-.section__heading {
-  font-family: var(--heading-font);
-  font-size: clamp(18px, 1.25rem + 1vw, 34px);
-  text-transform: capitalize;
-}
-
-.section__intro {
-  padding: 0 2em;
-  font-size: clamp(10px, 10px + 1vw, 16px);
-
-}
-
 .about-section {
-
+  margin-top: 2em;
 
   &__timeline-container {
     display: flex;
@@ -220,10 +107,14 @@ section {
     border: none;
     background: none;
     color: #ddd;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
 
     &.active {
       color: var(--accent2-color);
       font-weight: bold;
+      transform: scale(110%);
+      transform-origin: left;
     }
   }
 
@@ -244,6 +135,9 @@ section {
     width: 95%;
     max-width: 400px;
     background-color: var(--accent2-color);
+    opacity: 0;
+    pointer-events: none;
+    transition: all .5s ease-in-out;
 
     display: grid;
     grid-template-columns: 60% 40%;
@@ -274,6 +168,11 @@ section {
       grid-area: img;
       height: 100%;
       object-fit: cover;
+    }
+
+    &.active {
+      opacity: 1;
+      pointer-events: all;
     }
   }
 
@@ -359,6 +258,9 @@ section {
 }
 
 .testimonial-section {
+  background-color: #eee;
+  padding: 2em 0;
+
   .testimonial-container {
     display: flex;
     justify-content: center;
@@ -429,28 +331,10 @@ section {
 
   .contact-btn {
     background-color: var(--accent1-color);
-  }
-}
 
-.footer {
-  padding: 2em 5em;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #ddd;
-
-  .social-media-container {
-    display: flex;
-    justify-content: center;
-    gap: .5em;
-    align-items: center;
-
-    list-style: none;
-    padding: 0;
-  }
-
-  @media screen and (min-width: 600px) {
-    flex-direction: row;
+    &:hover {
+      background-color: var(--headline-color-on-color);
+      color: var(--accent1-color);
+    }
   }
 }

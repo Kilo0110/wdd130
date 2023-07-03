@@ -1,0 +1,42 @@
+.contact-btn {
+  padding: .75em 2em;
+  border: none;
+  outline: none;
+  background-color: var(--headline-color-on-white);
+  color: var(--accent2-color);
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: .90rem;
+  vertical-align: baseline;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+  border-radius: .25em;
+
+  &:hover {
+    background-color: var(--accent1-color);
+  }
+
+  &:active {
+    scale: 80%;
+  }
+}
+
+section {
+  margin-bottom: 3em;
+}
+
+.section__heading,
+.section__intro {
+  text-align: center;
+}
+
+.section__heading {
+  font-family: var(--heading-font);
+  font-size: clamp(18px, 1.25rem + 1vw, 34px);
+  text-transform: capitalize;
+}
+
+.section__intro {
+  padding: 0 2em;
+  font-size: clamp(10px, 10px + 1vw, 16px);
+}
