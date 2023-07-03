@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/index.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -38,11 +38,14 @@
   <main class="main">
     <section class="hero-section">
       <div class="hero-section__text-container">
-        <h1 class="hero-section__heading">Clear Value Statement for My Target Audience</h1>
-        <p class="hero-section__intro">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus culpa nostrum
-          temporibus fugiat, porro
-          sit dolor enim beatae repudiandae in numquam quibusdam commodi rerum tempore, assumenda eligendi rem quasi
-          vero.</p>
+        <h1 class="hero-section__heading">Discover Visionary Artistry: Unleash Your Creativity!</h1>
+        <p class="hero-section__intro">Ignite your creativity with visionary artistry. Explore captivating visuals and
+          masterful craftsmanship on our website.
+          Immerse yourself in our artist's portfolio, where each stroke tells a unique story. Commission bespoke
+          masterpieces or
+          acquire soul-stirring artworks that resonate with you. Unleash your creativity and experience the
+          transformative power
+          of art.</p>
         <button class="contact-btn hero-section__contact-btn">Contact me</button>
       </div>
       <div class="hero-section__image-container">
@@ -54,30 +57,32 @@
       <p class="section__intro">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit, distinctio.</p>
       <div class="about-section__timeline-container">
         <ol class="timeline__controls">
-          <button class="timeline__control active">Who am I?</button>
-          <button class="timeline__control">Why art?</button>
-          <button class="timeline__control">What inspires me?</button>
+          <button id="intro-control" class="timeline__control active">Who am I?</button>
+          <button id="reason-control" class="timeline__control">Why art?</button>
+          <button id="inspiration-control" class="timeline__control">What inspires me?</button>
         </ol>
         <div class="timeline__entry-container">
-          <div class="timeline__entry">
+          <div id="intro-timeline__entry" class="timeline__entry active">
             <h3 class="timeline__entry__heading">Who am I?</h3>
-            <p class="timeline__entry__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, eius ipsam
-              et laboriosam delectus esse
-              quasi. Saepe officia quas architecto!</p>
+            <p class="timeline__entry__text">
+              I am a visionary artist, weaving captivating worlds with each stroke, inviting you to explore the depths
+              of my
+              imagination.
+            </p>
             <img class="timeline__entry__img" src="./images/home_images/image.jpg" alt="">
           </div>
-          <div class="timeline__entry">
+          <div id="reason-timeline__entry" class="timeline__entry">
             <h3 class="timeline__entry__heading">Why art?</h3>
-            <p class="timeline__entry__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, eius ipsam
-              et laboriosam delectus esse
-              quasi. Saepe officia quas architecto!</p>
+            <p class="timeline__entry__text">Art captures emotions, transcends boundaries, and breathes life into
+              imagination. It is the language of the soul, a
+              universal medium to express, connect, and inspire.</p>
             <img class="timeline__entry__img" src="./images/home_images/image.jpg" alt="">
           </div>
-          <div class="timeline__entry">
+          <div id="inspiration-timeline__entry" class="timeline__entry">
             <h3 class="timeline__entry__heading">What inspires me?</h3>
-            <p class="timeline__entry__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, eius ipsam
-              et laboriosam delectus esse
-              quasi. Saepe officia quas architecto!</p>
+            <p class="timeline__entry__text">Nature, beauty, and the human spirit fuel my art. Through their interplay,
+              I create captivating works that touch the
+              depths of the soul.</p>
             <img class="timeline__entry__img" src="./images/home_images/image.jpg" alt="">
           </div>
         </div>
@@ -180,6 +185,9 @@
 
     <a href="site-plan.html">Go to siteplan</a>
   </footer>
+
+
+  <script src="./js/index.js"></script>
 </body>
 
 </html>
