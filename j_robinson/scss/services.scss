@@ -14,16 +14,35 @@
 
 }
 
-.services-type-container {}
+.services-type-container {
+
+  @media screen and (min-width: 600px) {
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    gap: 2em;
+    max-width: 600px;
+    margin: 0 auto;
+    place-items: center;
+    place-content: center;
+    place-self: center;
+  }
+
+  @media screen and (min-width: 1000px) {
+    grid-template-columns: repeat(4, 200px);
+    max-width: 1200px;
+  }
+}
 
 .service-type {
   text-align: center;
   margin: 1em auto;
   max-width: 300px;
   padding: 0 .5em;
+  align-self: center;
+  justify-self: center;
 
   &__img {
-    width: 100px;
+    width: 150px;
     aspect-ratio: 1;
     border: 1px solid black;
     margin: 0 auto;
@@ -31,9 +50,135 @@
 
   &__name {
     font-size: clamp(12px, 12px + 1vw, 18px);
+    font-weight: 900;
+    text-transform: uppercase;
   }
 
   p {
     font-size: clamp(10px, 10px + 1vw, 15px);
   }
+
+
+  @media screen and (min-width: 600px) {
+    text-align: left;
+
+    .service-type__img {
+      margin: unset;
+      width: 100%;
+    }
+  }
+}
+
+.services__price-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2em;  
+}
+
+.service__price-container {
+  width: 90%;
+  max-width: 300px;
+  min-height: 80vh;
+  border: 1px solid black;
+  border-radius: .5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  // overflow: hidden;
+
+  i {
+    background-color: #eee;
+    width: 50px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    align-self: center;
+    transform: translateY(-20px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(10px, 20px + 1vw, 30px);
+  }
+
+  .service__price--details {
+    padding: 0 1em;
+  }
+
+  .services__price {
+    padding: 2em 0;
+    border-bottom-left-radius: .5em;
+    border-bottom-right-radius: .5em;
+    
+    p {
+      font-size: clamp(10px, 25px + 1vw, 50px);
+      font-weight: 900;
+
+      sup {
+        font-size: clamp(10px, 10px + 1vw, 20px);
+      }
+    }
+  }
+
+}
+
+// TODO: Fix the error with this line of code
+.services__price:nth-of-type(2) {
+  background: #000;
+}
+
+
+.testimonial {
+  width: 90%;
+  max-width: 400px;
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  grid-template-areas: 
+    'review review'
+    'img bio'
+  ;
+  gap: 1em;
+  border: 1px solid black;
+  border-radius: .5em;
+  padding: 1em;
+  padding-left: 2em;
+  background-color: #222;
+  color: white;
+  margin: 0 auto;
+
+  @supports (text-wrap: balance) {
+    text-wrap: balance
+  }
+
+  & > * {
+    justify-self: center;
+    align-self: center;
+  }
+
+  blockquote {
+    grid-area: review;
+        font-size: clamp(10px, 10px + 1vw, 18px);
+  }
+
+  img {
+    grid-area: img;
+    border-radius: 50%;
+    aspect-ratio: 1;
+  }
+
+  &__bio {
+    grid-area: bio;
+    text-align: center;
+  }
+
+  &__name {
+        font-size: clamp(10px, 10px + 1vw, 30px);
+  }
+
+  &:not(&:first-of-type) {
+    display: none;
+  }
+  // TODO: Complete the carousel with JavaScript
 }
